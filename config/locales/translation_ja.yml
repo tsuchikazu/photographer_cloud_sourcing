@@ -11,7 +11,7 @@ ja:
 
       user:
         confirmation_sent_at: confirmation_sent_at  #g
-        confirmation_token: confirmation_token  #g
+        confirmation_token: URL #g
         confirmed_at: confirmed_at  #g
         current_sign_in_at: current_sign_in_at  #g
         current_sign_in_ip: current_sign_in_ip  #g
