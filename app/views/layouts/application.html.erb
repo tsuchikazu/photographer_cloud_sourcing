@@ -47,9 +47,9 @@
           <a class="brand" href="#">Camera</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to "トップ", "/"  %></li>
+              <li><%= link_to "カメラマンを探す", "/path1"  %></li>
+              <li><%= link_to "仕事を探す", "/path2"  %></li>
               <% if user_signed_in?%>
                 <li>ようこそ<%= current_user.email %></li>
                 <li><%= link_to("アカウント編集",  edit_user_registration_path) %></li>
