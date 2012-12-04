@@ -1,0 +1,84 @@
+<%= form_for @profile, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :organization_type, :class => 'control-label' %>
+    <div class="controls">
+      <label class="radio">
+        <%= f.radio_button :organization_type, "1" %>個人
+      </label>
+
+
+      <label class="radio">
+        <%= f.radio_button :organization_type, "2" %>法人
+      </label>
+    <%= f.label :organization, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :organization, :class => 'text_field' %>
+    </div>
+    <%= f.label :division, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :division, :class => 'text_field' %>
+    </div>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :birth, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_select :birth, {:class => 'date_select'}, {:class => 'input-small'} %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :zip_code_1, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :zip_code_1, :class => 'text_field input-mini' %>
+      -<%= f.text_field :zip_code_2, :class => 'text_field input-mini', :onKeyUp => "AjaxZip3.zip2addr('profile[zip_code_1]', 'profile[zip_code_2]', 'profile[pref]', 'profile[address_1]', 'profile[address_2]');" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :pref, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :pref, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :address_1, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :address_1, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :address_2, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :address_2, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :phone, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :mobile_phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :mobile_phone, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :fax, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :fax, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+  </div>
+<% end %>
+
+<script src="http://ajaxzip3.googlecode.com/svn/trunk/ajaxzip3/ajaxzip3.js" charset="UTF-8"></script>

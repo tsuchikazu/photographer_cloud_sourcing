@@ -25,3 +25,20 @@ ja:
         reset_password_sent_at: reset_password_sent_at  #g
         reset_password_token: reset_password_token  #g
         unconfirmed_email: unconfirmed_email  #g
+        is_photographer: is_photographer  #g
+
+      profile:
+        address_1: 住所１ #g
+        address_2: 住所２ #g
+        birth: 生年月日 #g
+        fax: FAX番号 #g
+        mobile_phone: 携帯番号 #g
+        name: 名前 #g
+        organization_type: 所属 #g
+        organization: 会社名 #g
+        division: 部署名 #g
+        phone: 電話番号 #g
+        pref: 都道府県 #g
+        user: :activerecord.models.user  #g
+        zip_code_1: 郵便番号 #g
+        zip_code_2: 郵便番号 #g
