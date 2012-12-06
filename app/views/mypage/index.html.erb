@@ -1,14 +1,22 @@
 <div class="page-header">
   <h1>マイページ</h1>
 </div>
+<div class="row-fluid">
+  <div class="span5">
     <h3>お知らせ</h3>
     <ul>
       <li>会員10万人突破</li>
       <li>銀行口座による振込先口座名義変更のお知らせ</li>
     </ul>
+  </div>
+  <div class="span5">
+    <%= link_to "新しい仕事を依頼する", new_job_offer_path, method:"get", class:"btn btn-large btn-block btn-primary"%>
+  </div>
+</div>
+
 
 <div class="row-fluid">
-  <div class="span4">
+  <div class="span5">
 
     <h3>プロフィール完成度</h3>
     <div class="progress progress-info progress-striped">
@@ -34,7 +42,7 @@
       <li>2012/12/08 仕事が依頼されたよ!!!</li>
     </ul>
   </div>
-  <div class="span4">
+  <div class="span5">
     <h3>プロフィール管理</h3>
     プロフィールの管理ができます。
     <ul>
@@ -46,7 +54,7 @@
     <h3>会員情報管理</h3>
     登録情報の編集ができます。
     <ul>
-      <li>メールアドレス/パスワード変更</li>
+      <li><%= link_to "メールアドレス/パスワード変更", edit_user_registration_path %></li>
       <li>振込口座登録</li>
       <li>外部サービス連携</li>
     </ul>

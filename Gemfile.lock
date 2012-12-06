@@ -44,6 +44,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    diff-lcs (1.1.3)
     domain_name (0.5.4)
       unf (~> 0.0.3)
     erubis (2.7.0)
@@ -115,6 +116,17 @@ GEM
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
+    rspec-core (2.12.1)
+    rspec-expectations (2.12.0)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.12.0)
+    rspec-rails (2.12.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.12.0)
+      rspec-expectations (~> 2.12.0)
+      rspec-mocks (~> 2.12.0)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -158,6 +170,7 @@ DEPENDENCIES
   mysql2
   rails (= 3.2.9)
   rails_config
+  rspec-rails
   therubyracer
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

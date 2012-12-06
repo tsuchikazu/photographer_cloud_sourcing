@@ -1,0 +1,15 @@
+<h1>【<%= @job_offer.title %>】の募集を開始しました！</h1>
+
+<h3>案件登録が完了し、メンバー募集を開始しました。</h3>
+<ol>
+  <li>FacebookやTwitterで案件ページを広めましょう</li>
+  <li>「見てみて！リクエスト！」を使ってオススメのメンバーに案件を告知する<br/>
+    <%= link_to "見てみてリクエストを送る", root_path,  method:"get", class:"btn btn-large btn-primary"%>
+  </li>
+  <li>「カメラマンを探す」からカメラマンをスカウトする<br/>
+    <%= link_to "カメラマンを探す", root_path,  method:"get", class:"btn btn-large btn-primary"%>
+  </li>
+</ol>
+<%= link_to "案件管理画面へ", job_offers_path,  method:"get", class:"btn btn-large btn-primary"%>
+
+

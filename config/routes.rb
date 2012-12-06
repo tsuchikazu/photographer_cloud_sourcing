@@ -1,7 +1,16 @@
 Camera::Application.routes.draw do
+  resources :job_offers do
+    member do
+      get:complete
+    end
+  end
+
+
+
   get "mypage/index"
 
-  resources :profiles
+  resources :profiles do
+  end
 
 
   devise_for :users, :controllers => {

@@ -28,6 +28,9 @@ end
 group :development do
   gem 'i18n_generators'
 end
+group :test do
+  gem "rspec-rails"
+end
 
 gem 'jquery-rails'
 

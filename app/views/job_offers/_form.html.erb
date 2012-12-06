@@ -1,0 +1,68 @@
+<%= form_for @job_offer, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :category, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :category, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :budget, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :budget, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :detail, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :detail, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :expired_on, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_select :expired_on, :class => 'date_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :reqest_on, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_select :reqest_on, :class => 'date_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :place, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :place, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :open_code, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :open_code, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :option, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :option, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :state, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :state, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                job_offers_path, :class => 'btn' %>
+  </div>
+<% end %>
