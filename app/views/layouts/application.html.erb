@@ -52,7 +52,7 @@
               <li><%= link_to "仕事を探す", "/path2"  %></li>
               <% if user_signed_in?%>
                 <li>ようこそ<%= current_user.email %></li>
-                <li><%= link_to("アカウント編集",  edit_user_registration_path) %></li>
+                <li><%= link_to("マイページ",  mypage_index_path) %></li>
                 <li><%= link_to "ログアウト",  destroy_user_session_path, method: :delete%></li>
               <% else %>
                 <li><%= link_to "会員登録",  new_user_registration_path %></li>
